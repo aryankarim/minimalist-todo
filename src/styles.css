@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap");
+
+* {
+  font-family: "Antic Slab";
+}
+
+body {
+  background-color: #101820;
+}
+
+body h1 {
+  font-family: "Antic Slab";
+  font-size: 3em;
+  text-align: center;
+  color: #cf6bdd;
+}
+.container {
+  text-align: center;
+}
+.todoContainer {
+  margin: 3em;
+}
+
+.todo {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* input check*/
+.option-input {
+  appearance: none;
+  height: 70px;
+  width: 70px;
+  background: #291e30;
+  cursor: pointer;
+  border-radius: 4em;
+}
+.option-input:hover {
+  background: #75aa78;
+}
+.option-input:checked::after {
+  background: #5ee07c;
+  height: 70px;
+  width: 70px;
+  content: "✔";
+  color: #101820;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  font-size: 52px;
+  border-radius: 2em;
+}
+
+/*delete input*/
+
+.delete-input,
+.add-input {
+  appearance: none;
+  height: 70px;
+  width: 70px;
+  background: #291e30;
+  border: none;
+  border-radius: 4em;
+  cursor: pointer;
+}
+
+.delete-input:hover {
+  background-color: #c07171;
+}
+.add-input:hover {
+  background: #cf6bdd;
+}
+/*text input*/
+
+.text-input {
+  background: transparent;
+  color: #cf6bdd;
+  border: none;
+  width: 43rem;
+  height: 50px;
+  font-size: 18pt;
+  /* border-top: 1px solid #bd5a5a; */
+  border-bottom: 1px solid #291e30;
+  /* border-left:1px solid #bd5a5a; */
+  /* border-radius: 0.21em; */
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+}
+.text-input::placeholder {
+  font-family: "Antic Slab";
+  color: #4c3958;
+}
+.text-input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-input {
+    background: transparent;
+    color: #cf6bdd;
+    border: none;
+    width: 5rem;
+    height: 50px;
+    font-size: 10pt;
+    /* border-top: 1px solid #bd5a5a; */
+    border-bottom: 1px solid #291e30;
+    /* border-left:1px solid #bd5a5a; */
+    /* border-radius: 0.21em; */
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+  }
+
+  .option-input {
+    appearance: none;
+    height: 50px;
+    width: 50px;
+    background: #291e30;
+    cursor: pointer;
+    border-radius: 4em;
+  }
+
+  .option-input:checked::after {
+    background: #5ee07c;
+    height: 50px;
+    width: 50px;
+    content: "✔";
+    color: #101820;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 2em;
+  }
+
+  /*delete input*/
+
+  .delete-input,
+  .add-input {
+    appearance: none;
+    height: 50px;
+    width: 50px;
+    background: #291e30;
+    border: none;
+    border-radius: 4em;
+    cursor: pointer;
+  }
+}
