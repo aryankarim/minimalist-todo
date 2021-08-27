@@ -35,19 +35,19 @@ function reducer(state, action) {
       return state;
   }
 }
-
+let initialState = [{ id: Date.now(), completed: false, value: "" }]
 export default function App() {
-  const [state, dispatch] = useReducer(reducer, []);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
     const raw = localStorage.getItem("aryanTodoData");
-    dispatch({ type: "reset", payload: JSON.parse(raw) });
+    if (raw)
+      dispatch({ type: "reset", payload: JSON.parse(raw) });
   }, []);
 
   useEffect(() => {
     localStorage.setItem("aryanTodoData", JSON.stringify(state));
   }, [state]);
-
   return (
     <Context.Provider value={dispatch}>
       <div className="container">
