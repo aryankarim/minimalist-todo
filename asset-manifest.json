@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/minimalist-todo/static/css/main.8755886f.chunk.css",
+    "main.js": "/minimalist-todo/static/js/main.34c16d60.chunk.js",
+    "main.js.map": "/minimalist-todo/static/js/main.34c16d60.chunk.js.map",
+    "runtime-main.js": "/minimalist-todo/static/js/runtime-main.e0c14f1e.js",
+    "runtime-main.js.map": "/minimalist-todo/static/js/runtime-main.e0c14f1e.js.map",
+    "static/js/2.a9ee4f1a.chunk.js": "/minimalist-todo/static/js/2.a9ee4f1a.chunk.js",
+    "static/js/2.a9ee4f1a.chunk.js.map": "/minimalist-todo/static/js/2.a9ee4f1a.chunk.js.map",
+    "index.html": "/minimalist-todo/index.html",
+    "static/css/main.8755886f.chunk.css.map": "/minimalist-todo/static/css/main.8755886f.chunk.css.map",
+    "static/js/2.a9ee4f1a.chunk.js.LICENSE.txt": "/minimalist-todo/static/js/2.a9ee4f1a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0c14f1e.js",
+    "static/js/2.a9ee4f1a.chunk.js",
+    "static/css/main.8755886f.chunk.css",
+    "static/js/main.34c16d60.chunk.js"
+  ]
+}
